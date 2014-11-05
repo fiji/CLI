@@ -32,12 +32,12 @@ package CLI;
  */
 
 
+import ij.IJ;
+import ij.ImagePlus;
+import ij.ImageStack;
+import ij.io.Opener;
 import ij.process.ImageProcessor;
 import ij.process.TypeConverter;
-import ij.ImagePlus;
-import ij.io.Opener;
-import ij.ImageStack;
-import ij.IJ;
 
 import java.io.File;
 

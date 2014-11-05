@@ -30,13 +30,15 @@ package CLI;
 import ij.IJ;
 import ij.ImagePlus;
 import ij.io.FileSaver;
+
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.Toolkit;
-import java.awt.Dimension;
-import java.awt.Image;
 import java.io.File;
-import java.awt.Component;
+
 import javax.swing.JTextArea;
 
 public class Screenshot implements Runnable {

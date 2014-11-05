@@ -1,21 +1,22 @@
 package CLI;
 import ij.IJ;
-import ij.io.Opener;
-import ij.io.DirectoryChooser;
 import ij.ImagePlus;
-import ij.gui.ImageCanvas;
-import ij.plugin.PlugIn;
 import ij.Macro;
+import ij.io.DirectoryChooser;
+import ij.io.Opener;
+import ij.plugin.PlugIn;
 import ij.plugin.frame.Recorder;
-import java.io.File;
-import java.awt.event.ActionListener;
+
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JButton;
 import javax.swing.JSlider;
-import javax.swing.event.ChangeListener;
 import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 public class Slide_Show implements PlugIn {
 

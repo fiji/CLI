@@ -30,7 +30,6 @@ package CLI;
 
 import java.util.ArrayList;
 import java.util.StringTokenizer;
-import ij.IJ;
 
 class MacroRecord {
 

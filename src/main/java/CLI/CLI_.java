@@ -64,68 +64,45 @@ package CLI;
  * AUTHOR: Albert Cardona at albert at pensament.net
  */
 
-import ij.plugin.PlugIn;
-import ij.IJ;
-import ij.macro.Interpreter;
-import ij.WindowManager;
-import ij.macro.MacroConstants;
-import ij.gui.GenericDialog;
-import ij.plugin.frame.Recorder;
-
 import common.AbstractInterpreter;
 
-import javax.swing.JScrollPane;
-import javax.swing.JScrollBar;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.JPanel;
-import javax.swing.JFrame;
-import javax.swing.JEditorPane;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-import java.awt.event.KeyListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyAdapter;
-import java.awt.event.WindowListener;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.event.FocusListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusAdapter;
-import javax.swing.KeyStroke;
-import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
-import java.util.ArrayList;
-import javax.swing.JPopupMenu;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.JMenuItem;
-import java.io.File;
-import java.io.IOException;
-import java.util.StringTokenizer;
-import java.awt.datatransfer.Transferable;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.StringSelection;
-import java.awt.datatransfer.ClipboardOwner;
-import java.awt.Toolkit;
+import ij.IJ;
+import ij.WindowManager;
+import ij.gui.GenericDialog;
+import ij.macro.Interpreter;
+import ij.macro.MacroConstants;
+
+import java.awt.Dimension;
 import java.awt.FileDialog;
-import java.io.DataOutputStream;
-import java.io.FileOutputStream;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.ClipboardOwner;
+import java.awt.datatransfer.StringSelection;
+import java.awt.datatransfer.Transferable;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.io.BufferedOutputStream;
-import java.awt.Color;
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.DataOutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.awt.Font;
-import java.awt.Dimension;
-import javax.swing.event.HyperlinkListener;
-import javax.swing.event.HyperlinkEvent;
-import java.awt.Component;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.StringTokenizer;
+
+import javax.swing.JEditorPane;
+import javax.swing.JFrame;
+import javax.swing.JMenuItem;
+import javax.swing.JPopupMenu;
+import javax.swing.JScrollPane;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
 
 
 public class CLI_ extends AbstractInterpreter {
